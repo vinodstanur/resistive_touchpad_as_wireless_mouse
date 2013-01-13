@@ -6,7 +6,7 @@ Turn ON the device. Search for the bluetooth MAC address and add it to /etc/blue
 hcitool scan  (for scanning the bluetooth device)
 
 #############/etc/bluetooth/rfcomm.conf#######################
-rfcomm3 {
+rfcomm2 {
 #	# Automatically bind the device at startup
 			bind yes;
 #
@@ -17,13 +17,13 @@ rfcomm3 {
 #	# RFCOMM channel for the connection
 					channel	1;
 
-						comment "bluetooth serial port4";
+						comment "bluetooth serial port2";
 }
 #############################################################
 
 Now bind the device using command shown below:
 
-sudo rfcomm bind 3
+sudo rfcomm bind 2
 
 
 Now run the mouse.py and you can use the bluetooth mouse to control the mouse pointer, clicks and wheel....
